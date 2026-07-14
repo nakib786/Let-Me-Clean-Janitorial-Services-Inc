@@ -193,7 +193,7 @@
     margin-top:56px;
     border-top:1px solid var(--hairline-dark);
     display:grid;
-    grid-template-columns:repeat(4,1fr);
+    grid-template-columns:repeat(5,1fr);
   }
   .site-strip div{
     padding:18px 0 22px;
@@ -499,7 +499,7 @@
     .hero-grid{grid-template-columns:1fr;}
     .hero-side{border-left:none;border-top:2px solid var(--hairline-dark);padding-left:0;padding-top:24px;}
     .site-strip{grid-template-columns:1fr 1fr;}
-    .site-strip div:nth-child(2){border-right:none;}
+    .site-strip div:nth-child(even){border-right:none;}
   }
 </style>
 </head>
@@ -567,6 +567,10 @@
         <span class="num">04</span>
         <span class="label">Janitorial Contracts</span>
       </div>
+      <div>
+        <span class="num">05</span>
+        <span class="label">Construction Contracts</span>
+      </div>
     </div>
   </div>
 </section>
@@ -597,6 +601,11 @@
         <div class="code">SEC. 04</div>
         <h3>Janitorial Contracts</h3>
         <p>Ongoing facility maintenance for property managers and businesses — nightly, weekly, or custom schedules with a fixed scope and a fixed price.</p>
+      </div>
+      <div class="spec-row">
+        <div class="code">SEC. 05</div>
+        <h3>Construction Contracts</h3>
+        <p>Standing agreements with general contractors and builders for cleanup across multiple sites or phases — rough clean, progressive clean, and final clean built into your project timeline.</p>
       </div>
     </div>
   </div>
@@ -690,7 +699,7 @@
             <div class="k">What to include in your email</div>
           </div>
           <ul class="checklist">
-            <li><span class="box"></span> Service type (construction, commercial, residential, janitorial)</li>
+            <li><span class="box"></span> Service type (construction, commercial, residential, janitorial, contract)</li>
             <li><span class="box"></span> Property size or approximate square footage</li>
             <li><span class="box"></span> Target date or handover deadline</li>
             <li><span class="box"></span> One-time visit or ongoing contract</li>
