@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Let Me Clean Janitorial Services Inc. | Kamloops, BC</title>
+<meta name="description" content="Post-construction, residential, commercial and janitorial cleaning in Kamloops, BC. Let Me Clean Janitorial Services Inc.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --charcoal:#1E2124;
+    --charcoal-soft:#2A2D31;
+    --off-white:#F5F4F0;
+    --paper:#FBFAF7;
+    --orange:#E85D2A;
+    --steel:#6B7178;
+    --hairline:#D8D6D0;
+    --hairline-dark:#3A3D41;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--paper);
+    color:var(--charcoal);
+    font-family:'Inter',sans-serif;
+    line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+  }
+  .display{
+    font-family:'Archivo Black',sans-serif;
+    text-transform:uppercase;
+    letter-spacing:-0.01em;
+  }
+  .stencil{
+    font-family:'Barlow Condensed',sans-serif;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:0.04em;
+  }
+  a{color:inherit;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 28px;}
+
+  /* Focus visibility */
+  a:focus-visible, button:focus-visible{
+    outline:3px solid var(--orange);
+    outline-offset:2px;
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    *{animation:none !important; transition:none !important;}
+  }
+
+  /* ===== TOP BAR ===== */
+  .topbar{
+    background:var(--charcoal);
+    color:var(--off-white);
+    font-family:'Barlow Condensed',sans-serif;
+    font-weight:600;
+    letter-spacing:0.03em;
+    font-size:13px;
+  }
+  .topbar .wrap{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding-top:9px;
+    padding-bottom:9px;
+    flex-wrap:wrap;
+    gap:6px;
+  }
+  .topbar a{text-decoration:none;}
+  .topbar a:hover{color:var(--orange);}
+  .topbar .tag{color:#9BA0A6;}
+
+  /* ===== HEADER / NAV ===== */
+  header.site{
+    border-bottom:3px solid var(--charcoal);
+    background:var(--paper);
+    position:sticky;
+    top:0;
+    z-index:50;
+  }
+  .navrow{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:18px 0;
+  }
+  .logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+  }
+  .logo-mark{
+    width:40px;height:40px;
+    background:var(--orange);
+    display:flex;align-items:center;justify-content:center;
+    flex-shrink:0;
+  }
+  .logo-mark svg{width:24px;height:24px;}
+  .logo-text{
+    font-family:'Archivo Black',sans-serif;
+    font-size:16px;
+    line-height:1.15;
+    text-transform:uppercase;
+  }
+  .logo-text span{
+    display:block;
+    font-family:'Barlow Condensed',sans-serif;
+    font-weight:600;
+    font-size:11px;
+    letter-spacing:0.08em;
+    color:var(--steel);
+    text-transform:uppercase;
+  }
+  nav.primary{display:flex;gap:32px;}
+  nav.primary a{
+    font-family:'Barlow Condensed',sans-serif;
+    font-weight:600;
+    font-size:15px;
+    letter-spacing:0.03em;
+    text-transform:uppercase;
+    text-decoration:none;
+    color:var(--charcoal);
+    padding:4px 0;
+    border-bottom:2px solid transparent;
+  }
+  nav.primary a:hover{border-bottom-color:var(--orange);}
+  .nav-toggle{display:none;}
+
+  /* ===== HERO ===== */
+  .hero{
+    background:var(--charcoal);
+    color:var(--off-white);
+    padding:72px 0 0;
+    position:relative;
+    overflow:hidden;
+  }
+  .hero-grid{
+    display:grid;
+    grid-template-columns:1.3fr 1fr;
+    gap:40px;
+    align-items:end;
+  }
+  .eyebrow{
+    font-family:'Barlow Condensed',sans-serif;
+    font-weight:700;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    font-size:13px;
+    color:var(--orange);
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:18px;
+  }
+  .eyebrow::before{
+    content:"";
+    width:28px;height:2px;
+    background:var(--orange);
+    display:block;
+  }
+  .hero h1{
+    font-size:clamp(40px,6vw,74px);
+    line-height:0.98;
+    margin-bottom:22px;
+  }
+  .hero h1 em{
+    font-style:normal;
+    color:var(--orange);
+  }
+  .hero p.lead{
+    font-size:18px;
+    color:#C7C9CC;
+    max-width:44ch;
+    margin-bottom:0;
+  }
+  .hero-side{
+    border-left:2px solid var(--hairline-dark);
+    padding-left:28px;
+    padding-bottom:8px;
+  }
+  .hero-side p{
+    font-family:'Barlow Condensed',sans-serif;
+    font-size:16px;
+    color:#9BA0A6;
+    line-height:1.5;
+  }
+  .site-strip{
+    margin-top:56px;
+    border-top:1px solid var(--hairline-dark);
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+  }
+  .site-strip div{
+    padding:18px 0 22px;
+    border-right:1px solid var(--hairline-dark);
+    padding-left:2px;
+  }
+  .site-strip div:last-child{border-right:none;}
+  .site-strip .num{
+    font-family:'Archivo Black',sans-serif;
+    font-size:28px;
+    color:var(--orange);
+    display:block;
+  }
+  .site-strip .label{
+    font-family:'Barlow Condensed',sans-serif;
+    font-size:13px;
+    letter-spacing:0.04em;
+    text-transform:uppercase;
+    color:#9BA0A6;
+  }
+
+  /* ===== SECTION HEADERS ===== */
+  .section{padding:88px 0;}
+  .section-head{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    gap:24px;
+    margin-bottom:48px;
+    border-bottom:3px solid var(--charcoal);
+    padding-bottom:20px;
+  }
+  .section-head h2{
+    font-size:clamp(28px,4vw,42px);
+  }
+  .section-head .desc{
+    font-family:'Barlow Condensed',sans-serif;
+    font-size:17px;
+    color:var(--steel);
+    max-width:36ch;
+    text-align:right;
+    text-transform:none;
+    font-weight:500;
+    letter-spacing:0;
+  }
+  @media(max-width:720px){
+    .section-head{flex-direction:column;align-items:flex-start;}
+    .section-head .desc{text-align:left;}
+  }
+
+  /* ===== SERVICES — spec sheet style ===== */
+  .spec-list{border-top:1px solid var(--hairline);}
+  .spec-row{
+    display:grid;
+    grid-template-columns:90px 1fr 1.4fr;
+    gap:24px;
+    padding:28px 0;
+    border-bottom:1px solid var(--hairline);
+    align-items:start;
+  }
+  .spec-row .code{
+    font-family:'Barlow Condensed',sans-serif;
+    font-weight:700;
+    font-size:14px;
+    color:var(--orange);
+    letter-spacing:0.05em;
+    padding-top:4px;
+  }
+  .spec-row h3{
+    font-family:'Archivo Black',sans-serif;
+    text-transform:uppercase;
+    font-size:19px;
+    letter-spacing:0;
+    padding-top:2px;
+  }
+  .spec-row p{
+    color:var(--steel);
+    font-size:15px;
+    max-width:52ch;
+  }
+  @media(max-width:720px){
+    .spec-row{grid-template-columns:1fr;gap:6px;}
+  }
+
+  /* ===== WHY / APPROACH ===== */
+  .approach{
+    background:var(--charcoal);
+    color:var(--off-white);
+  }
+  .approach .section-head{border-bottom-color:var(--hairline-dark);}
+  .approach .section-head .desc{color:#9BA0A6;}
+  .approach-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:1px;
+    background:var(--hairline-dark);
+  }
+  .approach-card{
+    background:var(--charcoal);
+    padding:32px 28px;
+  }
+  .approach-card .mk{
+    font-family:'Archivo Black',sans-serif;
+    color:var(--orange);
+    font-size:13px;
+    letter-spacing:0.05em;
+    margin-bottom:14px;
+    display:block;
+  }
+  .approach-card h3{
+    font-family:'Archivo Black',sans-serif;
+    text-transform:uppercase;
+    font-size:18px;
+    margin-bottom:10px;
+  }
+  .approach-card p{
+    color:#B4B7BB;
+    font-size:15px;
+  }
+  @media(max-width:820px){
+    .approach-grid{grid-template-columns:1fr;}
+  }
+
+  /* ===== SECTORS ===== */
+  .sector-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+  }
+  .sector-card{
+    border:1px solid var(--hairline);
+    padding:26px 20px;
+    background:var(--off-white);
+  }
+  .sector-card .n{
+    font-family:'Barlow Condensed',sans-serif;
+    font-weight:700;
+    color:var(--steel);
+    font-size:13px;
+    letter-spacing:0.05em;
+    margin-bottom:30px;
+    display:block;
+  }
+  .sector-card h4{
+    font-family:'Archivo Black',sans-serif;
+    text-transform:uppercase;
+    font-size:16px;
+    line-height:1.3;
+  }
+  @media(max-width:820px){
+    .sector-grid{grid-template-columns:1fr 1fr;}
+  }
+  @media(max-width:480px){
+    .sector-grid{grid-template-columns:1fr;}
+  }
+
+  /* ===== JOB TICKET — signature contact block ===== */
+  .ticket-section{
+    padding:88px 0 100px;
+  }
+  .ticket{
+    border:3px solid var(--charcoal);
+    background:var(--paper);
+    position:relative;
+  }
+  .ticket-head{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:var(--charcoal);
+    color:var(--off-white);
+    padding:16px 26px;
+  }
+  .ticket-head .t1{
+    font-family:'Archivo Black',sans-serif;
+    text-transform:uppercase;
+    font-size:16px;
+  }
+  .ticket-head .t2{
+    font-family:'Barlow Condensed',sans-serif;
+    font-weight:600;
+    font-size:13px;
+    letter-spacing:0.06em;
+    color:var(--orange);
+    text-transform:uppercase;
+  }
+  .ticket-body{
+    display:grid;
+    grid-template-columns:1.1fr 1fr;
+  }
+  .ticket-col{
+    padding:36px 32px;
+  }
+  .ticket-col + .ticket-col{
+    border-left:1px dashed var(--hairline);
+  }
+  .field{
+    margin-bottom:22px;
+  }
+  .field:last-child{margin-bottom:0;}
+  .field .k{
+    font-family:'Barlow Condensed',sans-serif;
+    font-weight:700;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    font-size:12px;
+    color:var(--steel);
+    margin-bottom:5px;
+  }
+  .field .v{
+    font-size:18px;
+    font-weight:600;
+  }
+  .field .v a{
+    text-decoration:none;
+    border-bottom:2px solid var(--orange);
+  }
+  .field .v a:hover{color:var(--orange);}
+  .field .v.small{font-size:15px;font-weight:500;line-height:1.55;}
+  .checklist{list-style:none;}
+  .checklist li{
+    display:flex;
+    align-items:flex-start;
+    gap:12px;
+    padding:9px 0;
+    border-bottom:1px solid var(--hairline);
+    font-size:15px;
+  }
+  .checklist li:last-child{border-bottom:none;}
+  .checklist .box{
+    width:16px;height:16px;
+    border:2px solid var(--charcoal);
+    flex-shrink:0;
+    margin-top:3px;
+    position:relative;
+  }
+  .checklist .box::after{
+    content:"";
+    position:absolute;
+    left:2px;top:-1px;
+    width:5px;height:9px;
+    border-right:2px solid var(--orange);
+    border-bottom:2px solid var(--orange);
+    transform:rotate(45deg);
+  }
+  @media(max-width:720px){
+    .ticket-body{grid-template-columns:1fr;}
+    .ticket-col + .ticket-col{border-left:none;border-top:1px dashed var(--hairline);}
+  }
+
+  /* ===== FOOTER ===== */
+  footer{
+    background:var(--charcoal);
+    color:#9BA0A6;
+    padding:36px 0;
+    font-family:'Barlow Condensed',sans-serif;
+  }
+  footer .wrap{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:12px;
+    font-size:13px;
+    letter-spacing:0.02em;
+  }
+  footer a{text-decoration:none;}
+  footer a:hover{color:var(--orange);}
+
+  /* Mobile nav */
+  @media(max-width:860px){
+    nav.primary{
+      position:fixed;
+      top:0;right:0;
+      height:100vh;
+      width:min(300px,80vw);
+      background:var(--charcoal);
+      flex-direction:column;
+      padding:100px 32px;
+      gap:26px;
+      transform:translateX(100%);
+      transition:transform .3s ease;
+      z-index:60;
+    }
+    nav.primary.open{transform:translateX(0);}
+    nav.primary a{color:var(--off-white);font-size:20px;}
+    .nav-toggle{
+      display:flex;
+      flex-direction:column;
+      gap:5px;
+      background:none;
+      border:none;
+      cursor:pointer;
+      padding:8px;
+      z-index:70;
+    }
+    .nav-toggle span{
+      width:26px;height:3px;
+      background:var(--charcoal);
+      display:block;
+    }
+    nav.primary.open ~ .nav-toggle span{background:var(--off-white);}
+    .hero-grid{grid-template-columns:1fr;}
+    .hero-side{border-left:none;border-top:2px solid var(--hairline-dark);padding-left:0;padding-top:24px;}
+    .site-strip{grid-template-columns:1fr 1fr;}
+    .site-strip div:nth-child(2){border-right:none;}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span class="tag">GST 770742419RT0001 &nbsp;·&nbsp; Kamloops, BC</span>
+    <a href="mailto:info@lmcjanitorial.ca">info@lmcjanitorial.ca</a>
+  </div>
+</div>
+
+<header class="site">
+  <div class="wrap navrow">
+    <div class="logo">
+      <div class="logo-mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#1E2124" stroke-width="2" stroke-linecap="square">
+          <path d="M4 20L14 4"/>
+          <path d="M14 4L20 4L20 10"/>
+          <path d="M4 20L10 20"/>
+        </svg>
+      </div>
+      <div class="logo-text">Let Me Clean
+        <span>Janitorial Services Inc.</span>
+      </div>
+    </div>
+    <nav class="primary" id="primaryNav">
+      <a href="#services">Services</a>
+      <a href="#sectors">Sectors</a>
+      <a href="#approach">Approach</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow">Kamloops &amp; surrounding area</div>
+        <h1 class="display">From last<br>framing nail<br>to <em>final walkthrough.</em></h1>
+        <p class="lead">Post-construction cleanup, janitorial contracts, and residential &amp; commercial cleaning — one crew, one call, done right the first time.</p>
+      </div>
+      <div class="hero-side">
+        <p>We work the site after the trades leave and before the client walks in. Dust, debris, sticker residue, streak-free glass — the handover has to be spotless, because it's the last thing anyone sees before move-in.</p>
+      </div>
+    </div>
+    <div class="site-strip">
+      <div>
+        <span class="num">01</span>
+        <span class="label">Post-Construction</span>
+      </div>
+      <div>
+        <span class="num">02</span>
+        <span class="label">Commercial</span>
+      </div>
+      <div>
+        <span class="num">03</span>
+        <span class="label">Residential</span>
+      </div>
+      <div>
+        <span class="num">04</span>
+        <span class="label">Janitorial Contracts</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="display">Scope of work</h2>
+      <p class="desc">Four service lines, one standard of clean.</p>
+    </div>
+    <div class="spec-list">
+      <div class="spec-row">
+        <div class="code">SEC. 01</div>
+        <h3>Post-Construction Cleanup</h3>
+        <p>Rough clean and final clean for new builds and renos — drywall dust, paint overspray, window sticker and label removal, floor prep, and full site detail before handover.</p>
+      </div>
+      <div class="spec-row">
+        <div class="code">SEC. 02</div>
+        <h3>Commercial Cleaning</h3>
+        <p>Recurring or one-time cleaning for offices, retail, and industrial spaces. Scheduled around your hours, not the other way around.</p>
+      </div>
+      <div class="spec-row">
+        <div class="code">SEC. 03</div>
+        <h3>Residential Cleaning</h3>
+        <p>Move-in, move-out, and regular home cleaning. Kitchens, bathrooms, floors, and everything in between, handled with the same crew every visit.</p>
+      </div>
+      <div class="spec-row">
+        <div class="code">SEC. 04</div>
+        <h3>Janitorial Contracts</h3>
+        <p>Ongoing facility maintenance for property managers and businesses — nightly, weekly, or custom schedules with a fixed scope and a fixed price.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="approach" id="approach">
+  <div class="wrap section">
+    <div class="section-head">
+      <h2 class="display">Why contractors call us back</h2>
+      <p class="desc">Built for jobsite deadlines, not showroom timelines.</p>
+    </div>
+    <div class="approach-grid">
+      <div class="approach-card">
+        <span class="mk">A</span>
+        <h3>We work your schedule</h3>
+        <p>Builds run behind, then need to close fast. We slot around your handover date, not a fixed booking calendar.</p>
+      </div>
+      <div class="approach-card">
+        <span class="mk">B</span>
+        <h3>We know construction debris</h3>
+        <p>Drywall dust, adhesive residue, paint spatter, and concrete film need different tools than a standard clean. We carry both.</p>
+      </div>
+      <div class="approach-card">
+        <span class="mk">C</span>
+        <h3>Local &amp; direct</h3>
+        <p>Based in Kamloops. You reach the people doing the work, not a call centre three provinces over.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="sectors">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="display">Who we work with</h2>
+      <p class="desc">General contractors to single-family homeowners.</p>
+    </div>
+    <div class="sector-grid">
+      <div class="sector-card">
+        <span class="n">01</span>
+        <h4>General Contractors</h4>
+      </div>
+      <div class="sector-card">
+        <span class="n">02</span>
+        <h4>Property Managers</h4>
+      </div>
+      <div class="sector-card">
+        <span class="n">03</span>
+        <h4>Homeowners</h4>
+      </div>
+      <div class="sector-card">
+        <span class="n">04</span>
+        <h4>Offices &amp; Retail</h4>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ticket-section" id="contact">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="display">Get in touch</h2>
+      <p class="desc">Send the job details, we'll quote it.</p>
+    </div>
+    <div class="ticket">
+      <div class="ticket-head">
+        <span class="t1">Job Ticket — New Inquiry</span>
+        <span class="t2">Status: Open</span>
+      </div>
+      <div class="ticket-body">
+        <div class="ticket-col">
+          <div class="field">
+            <div class="k">Company</div>
+            <div class="v">Let Me Clean Janitorial Services Inc.</div>
+          </div>
+          <div class="field">
+            <div class="k">Email</div>
+            <div class="v"><a href="mailto:info@lmcjanitorial.ca">info@lmcjanitorial.ca</a></div>
+          </div>
+          <div class="field">
+            <div class="k">Site Address</div>
+            <div class="v small">426 Campbell Ave<br>Kamloops, BC, V2B 3R9<br>Canada</div>
+          </div>
+          <div class="field">
+            <div class="k">GST Number</div>
+            <div class="v small">770742419RT0001</div>
+          </div>
+        </div>
+        <div class="ticket-col">
+          <div class="field">
+            <div class="k">What to include in your email</div>
+          </div>
+          <ul class="checklist">
+            <li><span class="box"></span> Service type (construction, commercial, residential, janitorial)</li>
+            <li><span class="box"></span> Property size or approximate square footage</li>
+            <li><span class="box"></span> Target date or handover deadline</li>
+            <li><span class="box"></span> One-time visit or ongoing contract</li>
+            <li><span class="box"></span> Site address, if different from your own</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Let Me Clean Janitorial Services Inc. — Kamloops, BC</span>
+    <a href="mailto:info@lmcjanitorial.ca">info@lmcjanitorial.ca</a>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('navToggle');
+  const nav = document.getElementById('primaryNav');
+  toggle.addEventListener('click', () => {
+    const isOpen = nav.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', isOpen);
+  });
+  nav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      nav.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+</script>
+
+</body>
+</html>
