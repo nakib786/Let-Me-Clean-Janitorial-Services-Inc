@@ -501,6 +501,27 @@
     .site-strip{grid-template-columns:1fr 1fr;}
     .site-strip div:nth-child(even){border-right:none;}
   }
+
+  @media(max-width:600px){
+    .wrap{padding:0 18px;}
+    .topbar .wrap{flex-direction:column;align-items:flex-start;gap:4px;padding-top:8px;padding-bottom:8px;}
+    .topbar div{gap:14px !important;}
+    .section{padding:56px 0;}
+    .ticket-section{padding:56px 0 64px;}
+    .section-head{margin-bottom:32px;padding-bottom:16px;}
+    .hero{padding-top:48px;}
+    .hero h1{font-size:clamp(34px,11vw,52px);}
+    .hero p.lead{font-size:16px;}
+    .site-strip{grid-template-columns:1fr 1fr;margin-top:36px;}
+    .site-strip .num{font-size:22px;}
+    .site-strip div{padding:14px 0 16px;}
+    .spec-row{padding:20px 0;}
+    .spec-row h3{font-size:17px;}
+    .ticket-col{padding:24px 20px;}
+    .ticket-head{padding:14px 18px;flex-direction:column;align-items:flex-start;gap:4px;}
+    .logo-text{font-size:14px;}
+    .approach-card{padding:26px 22px;}
+  }
 </style>
 </head>
 <body>
@@ -508,7 +529,10 @@
 <div class="topbar">
   <div class="wrap">
     <span class="tag">GST 770742419RT0001 &nbsp;·&nbsp; Kamloops, BC</span>
-    <a href="mailto:info@lmcjanitorial.ca">info@lmcjanitorial.ca</a>
+    <div style="display:flex;gap:18px;">
+      <a href="tel:+12366201248">236-620-1248</a>
+      <a href="mailto:info@lmcjanitorial.ca">info@lmcjanitorial.ca</a>
+    </div>
   </div>
 </div>
 
@@ -605,7 +629,22 @@
       <div class="spec-row">
         <div class="code">SEC. 05</div>
         <h3>Construction Contracts</h3>
-        <p>Standing agreements with general contractors and builders for cleanup across multiple sites or phases — rough clean, progressive clean, and final clean built into your project timeline.</p>
+        <p>Standing agreements with general contractors and builders for cleanup across multiple sites or phases — rough clean, progressive clean, and final clean built into your project timeline. Also covers:</p>
+      </div>
+      <div class="spec-row">
+        <div class="code">5.1</div>
+        <h3>Home Renovations</h3>
+        <p>Kitchen and bathroom remodels, basement development, additions — cleanup after each phase so the space stays livable while work is ongoing, plus a full detail clean at completion.</p>
+      </div>
+      <div class="spec-row">
+        <div class="code">5.2</div>
+        <h3>New Home Builds</h3>
+        <p>Rough clean, pre-inspection clean, and final walkthrough clean scheduled directly into the builder's construction timeline.</p>
+      </div>
+      <div class="spec-row">
+        <div class="code">5.3</div>
+        <h3>Multi-Unit &amp; Strata Turnover</h3>
+        <p>Unit-to-unit cleaning for apartment and townhouse builds, plus common area cleanup as units come online.</p>
       </div>
     </div>
   </div>
@@ -682,6 +721,10 @@
             <div class="v">Let Me Clean Janitorial Services Inc.</div>
           </div>
           <div class="field">
+            <div class="k">Phone</div>
+            <div class="v"><a href="tel:+12366201248">236-620-1248</a></div>
+          </div>
+          <div class="field">
             <div class="k">Email</div>
             <div class="v"><a href="mailto:info@lmcjanitorial.ca">info@lmcjanitorial.ca</a></div>
           </div>
@@ -714,7 +757,10 @@
 <footer>
   <div class="wrap">
     <span>© 2026 Let Me Clean Janitorial Services Inc. — Kamloops, BC</span>
-    <a href="mailto:info@lmcjanitorial.ca">info@lmcjanitorial.ca</a>
+    <div style="display:flex;gap:18px;">
+      <a href="tel:+12366201248">236-620-1248</a>
+      <a href="mailto:info@lmcjanitorial.ca">info@lmcjanitorial.ca</a>
+    </div>
   </div>
 </footer>
 
